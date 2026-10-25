@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy-deep: #050B14;
+    --color-navy-base: #070F1E;
+    --color-navy-surface: #0B172E;
+    --color-navy-card: #0F2042;
+    --color-navy-elevated: #162C58;
+    --color-navy-border: #1E3A70;
+    --color-electric-blue: #0EA5E9;
+    --color-electric-light: #38BDF8;
+    --color-electric-glow: rgba(14, 165, 233, 0.25);
+    --color-copper: #E8A85C;
+    --color-copper-dark: #B87333;
+    --color-copper-light: #F7D0A2;
+  }
+
+  body {
+    background-color: #070F1E;
+    color: #F8FAFC;
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Cairo', serif;
+  line-height: 1.85;
+  direction: rtl;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070F1E;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E3A70;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0EA5E9;
+}
+
+/* Electric Blue Glow & Surface Utilities */
+.electric-glow {
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.electric-border-glow {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+.copper-border-glow {
+  box-shadow: 0 0 15px rgba(232, 168, 92, 0.2);
+}
+
+.copper-gradient {
+  background: linear-gradient(135deg, #B87333 0%, #E8A85C 50%, #8B4513 100%);
+}
+
+.electric-gradient {
+  background: linear-gradient(135deg, #0284C7 0%, #0EA5E9 50%, #38BDF8 100%);
+}
+
+.copper-text-gradient {
+  background: linear-gradient(135deg, #FFF0D6 0%, #E8A85C 50%, #D97438 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.electric-text-gradient {
+  background: linear-gradient(135deg, #E0F2FE 0%, #38BDF8 50%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Engineering Blueprint grid texture */
+.engineering-grid {
+  background-image: 
+    linear-gradient(to right, rgba(30, 58, 112, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 58, 112, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
